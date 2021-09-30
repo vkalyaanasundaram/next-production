@@ -1,20 +1,48 @@
 import Head from "next/head";
-import Header from "../components/Header";
+import Image from "next/image";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import ReactHtmlParser, { htmlparser2 } from "react-html-parser";
+import { bgWrap, bgText } from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <>
       {/* Header  */}
       <Header />
-      <section>
-        <div className="rounded-lg overflow-hidden">
-          <img
-            alt="content"
-            className="w-full"
-            height="auto"
-            src="./HeroImages_secondarypage_salespartners.jpg"
+      <section className="relative">
+        <div className={bgWrap}>
+          <Image
+            alt="Mountains"
+            src="/HeroImages_secondarypage_salespartners.jpg"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
           />
+        </div>
+        <div className={bgText}>
+          <div className="xs:grid col-auto lg:grid grid-cols-2 gap-1 p-3">
+            <div className="text-blue-900 mb-10">
+              <div className="sm:w-full text-5xl xs:w-full text-5xl md:text-5xl">
+                Business Loan Financing to: <br />
+                Grow your business
+              </div>
+              <div className="sm:text-lg xs:text-sm mt-5 md:text-2xl text-blue-900">
+                <button>GET STARTED</button>
+              </div>
+
+              <div className="xs:text-xl mt-5 text-xs text-blue-900 text-left copyrights">
+                <p className="mt-5 text-xs">
+                  Copyright 2021 • Kapitus • All Rights Reserved Loans made in
+                  California are issued by Strategic Funding Source, Inc. dba
+                  Kapitus, pursuant to California Finance Lenders License No.
+                  603-G807.
+                </p>
+              </div>
+            </div>
+
+            {/* <div className="xs: hidden sm:hidden md:block ">{ReactHtmlParser(frmData)}</div> */}
+          </div>
         </div>
       </section>
       <section>
@@ -47,7 +75,7 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <h3 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-            What's New This Week
+            Whats New This Week
           </h3>
         </div>
         <div className="container px-5 py-24 mx-auto">
@@ -61,65 +89,9 @@ export default function Home() {
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
               Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
               gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom prism
+              haven heard of them man bun deep jianbing selfies heirloom prism
               food truck ugh squid celiac humblebrag.
             </p>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/720x400"
-                  alt="content"
-                />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  Saving Money
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Money Saving Tips and Ideas for Small Businesses{" "}
-                </h2>
-                <p className="leading-relaxed text-base">Annie Mueller.</p>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/721x401"
-                  alt="content"
-                />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Colosseum Roma
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/722x402"
-                  alt="content"
-                />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Great Pyramid of Giza
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

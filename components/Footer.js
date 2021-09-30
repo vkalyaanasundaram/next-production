@@ -117,23 +117,18 @@ const Footer = () => {
         </div>
 
         <div className="bg-gray-100">
-          <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-            <div className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <span className="copyright">
-                Copyright@2021 Kapitus, LLC or its affiliates.&nbsp;All rights
-                reserved.&nbsp;Kapitus, LLC, Kapitus.com, and the Kapitus logo
-                are registered trademarks of Kapitus, Inc. or its affiliates. |
-                Loans made in California are issued by Strategic Funding Source,
-                Inc. dba Kapitus, pursuant to California Finance Lenders License
-                No. 603-G807. <br />
-                <a href="https://kapitus.com/sitemap/">Sitemap</a> |
-                <a href="https://kapitus.com/terms-conditions/">
-                  Terms &amp; Conditions
-                </a>
-                |
-                <a href="https://kapitus.com/privacy-policy/">Privacy Policy</a>
-              </span>
-            </div>
+          <div className="container">
+            Copyright@2021 Kapitus, LLC or its affiliates.&nbsp;All rights
+            reserved.&nbsp;Kapitus, LLC, Kapitus.com, and the Kapitus logo are
+            registered trademarks of Kapitus, Inc. or its affiliates. | Loans
+            made in California are issued by Strategic Funding Source, Inc. dba
+            Kapitus, pursuant to California Finance Lenders License No.
+            603-G807. <br /> <a href="https://kapitus.com/sitemap/">Sitemap</a>{" "}
+            |{" "}
+            <a href="https://kapitus.com/terms-conditions/">
+              Terms &amp; Conditions
+            </a>{" "}
+            | <a href="https://kapitus.com/privacy-policy/">Privacy Policy</a>
           </div>
         </div>
       </footer>
