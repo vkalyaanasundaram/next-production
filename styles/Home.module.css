@@ -1,3 +1,19 @@
+.bgWrap {
+  position: absolute;
+  height: 100vh;
+  width: 98vw;
+  overflow: hidden;
+  z-index: -1;
+}
+.bgText {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  padding-top: 3vh;
+  text-shadow: 1px 1px 1px #3c5c5e;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
