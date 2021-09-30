@@ -34,6 +34,7 @@ const Header = () => {
   if (!data) return <div> Loading.... </div>;
 
   const primaryMenus = data?.menu?.menuItems?.edges;
+  // console.log(primaryMenus);
 
   return (
     <>

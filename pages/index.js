@@ -8,7 +8,6 @@ import { bgWrap, bgText } from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      {/* Header  */}
       <Header />
       <section className="relative">
         <div className={bgWrap}>
